@@ -11,7 +11,15 @@ run apt-get update
 run apt-get -y install $(cat pkglist)
 
 run pip3 install -r pip-requirements.txt
+
+workdir /home/hiredis
+run make && make install
+run ldconfig
+
+workdir /home
+
 run cobc -x -free -o /abs/TESTMERGE /home/Cobol_Codes/TESTMERGE.cbl
+run gcc /home/C_Codes/redis_example.c -lhiredis -o /abs/redis_example
 
 EXPOSE 8000
 
