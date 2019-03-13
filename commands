@@ -1,0 +1,4 @@
+
+gcc -o MYSQL_REDIS_REFRESH $(mysql_config --cflags) MYSQL_REDIS_REFRESH.c $(mysql_config --libs) -lhiredis
+
+sudo /home/vagrant/redis-5.0.3/src/redis-server &
