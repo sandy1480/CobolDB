@@ -2,3 +2,7 @@
 gcc -o MYSQL_REDIS_REFRESH $(mysql_config --cflags) MYSQL_REDIS_REFRESH.c $(mysql_config --libs) -lhiredis
 
 sudo /home/vagrant/redis-5.0.3/src/redis-server &
+
+mysqldump -u <user> -p --databases <database1> [<database2>] > database.sql
+
+~/gnucobol-3.0-rc1/cobc/cobc -x -free -o /abs/coboldb coboldb.cbl ../C_Codes/STRnn.c -lhiredis
