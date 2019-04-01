@@ -46,9 +46,9 @@ int main() {
 	char sql_string[500] = "";
 
 	char *server = "ec2-52-56-235-71.eu-west-2.compute.amazonaws.com";
-	char *user = "shashi";
-	char *password = "shashi";
-	char *database = "poc-db";
+	char *user = "sandy";
+	char *password = "password";
+	char *database = "CobDB";
 
 	conn = mysql_init(NULL);
 
