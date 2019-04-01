@@ -31,7 +31,7 @@ int main() {
 
 	redisContext *c;
 	redisReply *reply;
-	const char *hostname = "127.0.0.1";
+	const char *hostname = "ec2-52-56-235-71.eu-west-2.compute.amazonaws.com";
 	int port = 6379;
 	struct timeval timeout = { 1, 500000 }; // 1.5 seconds
 
@@ -45,7 +45,7 @@ int main() {
 
 	char sql_string[500] = "";
 
-	char *server = "localhost";
+	char *server = "ec2-52-56-235-71.eu-west-2.compute.amazonaws.com";
 	char *user = "shashi";
 	char *password = "shashi";
 	char *database = "poc-db";
