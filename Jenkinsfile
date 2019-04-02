@@ -17,7 +17,7 @@ node {
 	 
          stage('*** Deploy to Container ***'){
              echo "Deploy Stage Starting" 
-             app.run("--name CobDBApp-${env.BUILD_ID} -p 8090:8090 -v ~/container_dir:/data")     
+             app.run("--name CobDBApp-${env.BUILD_ID} -p 3000:3000")     
 	}	     
 }
     catch (e) {
