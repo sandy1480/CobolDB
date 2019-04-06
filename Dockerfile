@@ -22,4 +22,4 @@ run cobc -x -free -o /abs/coboldb /home/Cobol_Codes/coboldb.cbl /home/C_Codes/ST
 
 EXPOSE 3000
 
-CMD ["/abs/coboldb]
+CMD ["python3", "/home/Python_Codes/python-api/apis/coboldb.py"]
